@@ -1,0 +1,18 @@
+#!/bin/bash
+
+export TERM=xterm
+
+apt-get update -y
+apt-get install proftpd-basic -y
+
+cp def.conf /etc/proftpd/conf.d/
+
+service proftpd restart
+
+useradd -s /bin/false -d /var/www ftpuser
+
+chpasswd << 'END'
+ftpuser:big4ppl3
+END
+
+chown -R ftpuser:root /var/www
