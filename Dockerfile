@@ -1,5 +1,5 @@
 FROM nginx:latest
-MAINTAINER https://m-ko-x.de Markus Kosmal <code@m-ko-x.de>
+MAINTAINER http://m-ko.de Markus Kosmal <code@m-ko.de>
 
 RUN rm /etc/nginx/nginx.conf /etc/nginx/mime.types
 
