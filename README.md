@@ -5,17 +5,18 @@
 Use this as base for your image:
 
 - Create your Dockerfile
-
-    FROM mk0x/docker-nginx
-    ADD your/www/ /var/www/
-
+```Dockerfile
+FROM mk0x/docker-nginx
+ADD your/www/ /var/www/
+```
 - Build it
-
-    docker build -t yourname/your-image-name
-    
+```bash
+docker build -t yourname/your-image-name
+```   
 - Run it
-
-    docker run -d --name yourname -p 80:80 yourname/your-image-name
+```bash
+docker run -d --name yourname -p 80:80 yourname/your-image-name
+```
 
 # Info
 
