@@ -1,12 +1,12 @@
-# docker-nginx-simple
+# docker-nginx
 
 # Quickstart
 
-Use as base for your image:
+Use this as base for your image:
 
 - Create your Dockerfile
 
-    FROM mkodockx/docker-nginx-simple
+    FROM mk0x/docker-nginx
     ADD your/www/ /var/www/
 
 - Build it
