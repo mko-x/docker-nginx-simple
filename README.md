@@ -11,7 +11,7 @@ ADD your/www/ /var/www/
 ```
 - Build it
 ```bash
-docker build -t yourname/your-image-name
+docker build -t yourname/your-image-name .
 ```   
 - Run it
 ```bash
